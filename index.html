@@ -3,22 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="style.css">
     <script src="javascript.js" defer></script>
-  <style>
-  #grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: blue;
-    padding: 10px;
-  }
-  .gridItem {
-    background-color: red;
-    border: 1px solid white;
-    padding: 1em;
-  }
-  </style>
   </head>
   <body>
-    <div id="grid-container"></div>
+    <div class="all">
+      <div id="grid-container"></div>  
+    </div>
+    <div class="slidecontainer">
+      <input type="range" min="10" max="100" value="16" class="slider" id="myRange">
+    </div>
+    <div id="gridSize"></div>
   </body>
 </html>
