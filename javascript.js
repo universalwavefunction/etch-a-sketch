@@ -5,4 +5,12 @@
 
 const grid = document.querySelector('#grid-container');
 
-grid.style.cssText =
+//grid.style.cssText = 'display: grid; grid-template-columns: auto; background-color: blue; padding: 10px'
+
+let gridSize = 256;
+
+for (let i = 0; i < gridSize; i++) {
+  let gridItem = document.createElement('div');
+  grid.appendChild(gridItem).className = "gridItem";
+}
+console.log(grid)
