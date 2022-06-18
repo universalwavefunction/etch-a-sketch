@@ -8,11 +8,17 @@
   </head>
   <body>
     <div class="all">
-      <div id="grid-container"></div>  
+      <div class="top-header">Hover-To-Sketch! </div>
+      <div id="grid-container"></div>
+      <div id="gridSize">Grid size: <span id='columnsAndRows'></span>px</div>
+      <div class="interactive-stuff">
+        <button id="reset-button">Reset</button>
+        <button id="black-button">Black</button>
+        <button id="rgb-button">RGB</button>
+        <div class="slidecontainer">
+        <input type="range" min="10" max="100" value="16" class="slider" id="myRange">
+        </div>
+      </div>
     </div>
-    <div class="slidecontainer">
-      <input type="range" min="10" max="100" value="16" class="slider" id="myRange">
-    </div>
-    <div id="gridSize"></div>
   </body>
 </html>
